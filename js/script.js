@@ -33,6 +33,23 @@ $(document).ready(function() {
 });
 
 
+function burgersearch() {
+    document.getElementById('burger-input').style.display='block';
+    document.getElementById('burger-input').style.background='#f7f7f7';
+    document.getElementById('search-close').style.background='#f7f7f7';
+    document.getElementById('burger-search').style.display='none';
+    document.getElementById('close-input').style.display='block';
+    document.getElementById('close-burger').style.display='none';
+  }
+function closeburgersearch() {
+    document.getElementById('burger-input').style.display='none';
+    document.getElementById('burger-input').style.background='#fff';
+    document.getElementById('search-close').style.background='#fff';
+    document.getElementById('burger-search').style.display='block';
+    document.getElementById('close-input').style.display='none';
+    document.getElementById('close-burger').style.display='block';
+  }
+
 
 let nav2 = document.querySelector("#nav2")
 
@@ -238,3 +255,7 @@ slid1_6.addEventListener("mouseout", function(){
     document.getElementById('more-inf1-6').style.opacity='0';
     document.getElementById('more-inf1-6').style.right='0px';
 })
+
+
+
+

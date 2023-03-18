@@ -36,9 +36,13 @@
             </div>
         </div>
         <div class="burger-menu">
-            <div class="search-close">
-                <i class="fas fa-search"></i>
-                <div class="close-burger">
+            <div id="search-close" class="search-close">
+                <i id="burger-search" class="fas fa-search burger-search" onclick="burgersearch()" ></i>
+                <div id="close-input"onclick="closeburgersearch()" class="close-input">
+                    <i class="fas fa-times"></i>
+                </div>
+                <input id="burger-input" type="text" placeholder="Поиск">
+                <div id="close-burger" class="close-burger">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
