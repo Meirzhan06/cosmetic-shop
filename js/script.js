@@ -20,11 +20,17 @@ $(document).ready(function(){
 
 $(document).ready(function() {
     $('.nav-bars').click(function(event) {
-        $('.burger-menu').toggleClass('active');
+        $('.burger-menu').addClass('active');
+        $('body').addClass('active');
     });
 });
 
-
+$(document).ready(function() {
+    $('.close-burger').click(function(event) {
+        $('.burger-menu').removeClass('active');
+        $('body').removeClass('active');
+    });
+});
 
 
 
