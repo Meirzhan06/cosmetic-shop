@@ -24,13 +24,13 @@ header{
     left: 0;
     z-index: 20;
     padding-bottom: 30px;
-    transform: translateX(-100vh);
+    transform: translateX(-200vh);
     overflow-y: scroll;
-    overflow-x: scroll;
     transition: 1s all;
 }
 .burger-menu.active{
     transform: translateX(0vh);
+
 }
 .search-close{
     display: flex;
@@ -152,10 +152,10 @@ header:hover{
     height: 52px;
 }
 .container{
-    max-width: 1480px;
+    max-width: 1440px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 .nav-panel{
     width: 100%;
@@ -311,15 +311,17 @@ main{
 
 
 .section2{
-    height: 85vh;
+    /* height: 85vh; */
     width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 50px 0;
 }
 .section2 a{
     text-decoration: none;
+    flex-basis: 20%;
 }
 .card{
     height: 520px;
@@ -372,6 +374,8 @@ main{
     text-decoration: none;
     color: #000;
     margin: 0 15px;
+    display: flex;
+    justify-content: center;
 }
 .slider2 a:first-child{
     margin-left: 0;
@@ -391,6 +395,32 @@ main{
 }
 .slider-item2:hover ~ .more-inf{    
     color: red;
+}
+.slider2 .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider2 .slick-dots li{
+    list-style: none;
+    margin: 0 15px;
+}
+.slider2 .slick-dots button{
+    position: absolute;
+    bottom: -45px;
+    z-index: 2;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    font-size: 0;
+    border: none;
+    background-color: #000;
+    transition: 0.2s all;
+}
+.slider2 .slick-dots li.slick-active button{
+    background-color: rgba(168, 168, 168, 0.7);
+    width: 15px;
+    border-radius: 666px;
 }
 .slider-item2 h1{
     font-weight: 400;
@@ -481,7 +511,7 @@ main{
     padding-bottom: 100px;
 }
 .section5-content{
-    height: 65.6vh;
+    height: 63.7vh;
     width: 100%;
     display: flex;
 }
@@ -592,8 +622,28 @@ footer{
 }
 
 
-
-
+@media (max-width: 1340px){
+    .slider2 .slick-arrow.slick-prev{
+        margin-left: 0px;
+    }
+    .slider2 .slick-arrow.slick-next{
+        margin-right: 0px;
+    }
+}
+@media (max-width: 1240px){
+    .slider2 .slick-arrow.slick-prev{
+        margin-left: 40px;
+    }
+    .slider2 .slick-arrow.slick-next{
+        margin-right: 45px;
+    }
+}
+@media (max-width: 1280px){
+    .card{
+        width: 250px;
+        height: 380px;
+    }
+}
 @media (max-width: 1180px) {
     .nav-list{
         display: none;
@@ -607,11 +657,55 @@ footer{
     .slide-hidden a{
         font-size: 40px;
     }
+    .slider2 .slick-arrow.slick-prev{
+        margin-left: 30px;
+    }
+    .slider2 .slick-arrow.slick-next{
+        margin-right: 35px;
+    }
 }
-
+@media (max-width: 1100px){
+    .slider2 .slick-arrow.slick-prev{
+        margin-left: 15px;
+    }
+    .slider2 .slick-arrow.slick-next{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1080px){
+    .section2 a{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .section2{
+        padding: 20px 0;
+    }
+    .slider2 .slick-arrow.slick-prev{
+        margin-left: 15px;
+    }
+    .slider2 .slick-arrow.slick-next{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 980px){
+    .slider2 .slick-arrow.slick-prev{
+        margin-left: -5px;
+    }
+    .slider2 .slick-arrow.slick-next{
+        margin-right: 5px;
+    }
+}
 @media (max-width: 920px) {
     .slide-hidden a{
         font-size: 32px;
+    }
+    .slider2 .slick-arrow.slick-prev{
+        margin-left: -15px;
+    }
+    .slider2 .slick-arrow.slick-next{
+        margin-right: -5px;
     }
 }
 @media (max-width: 768px) {
@@ -625,5 +719,20 @@ footer{
 @media (max-width: 600px) {
     .slide-hidden a{
         font-size: 18px;
+    }
+    .section2 a{
+        flex-basis: 100%;
+    }
+    .card{
+        width: 70%;
+        height: 500px;
+    }
+    .slider2 a{
+        margin: 0;
+    }
+}
+@media (max-width: 420px){
+    .card{
+        width: 100%;
     }
 }

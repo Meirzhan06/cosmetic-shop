@@ -14,7 +14,37 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.slider2').slick({
         slidesToShow:5,
-        infinite:false
+        infinite:false,
+        responsive: [
+            {
+              breakpoint: 1350,
+              settings: {
+                slidesToShow:4
+              }
+            },
+            {
+              breakpoint: 1240,
+              settings: {
+                slidesToShow:3
+              }
+            },
+            {
+              breakpoint: 820,
+              settings: {
+                slidesToShow:2,
+                dots:true,
+                arrows:false
+              }
+            },
+            {
+              breakpoint: 620,
+              settings: {
+                slidesToShow:1,
+                dots:true,
+                arrows:false
+              }
+            }
+          ]
     });
 })
 
