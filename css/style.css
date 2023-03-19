@@ -24,7 +24,7 @@ header{
     left: 0;
     z-index: 20;
     padding-bottom: 30px;
-    transform: translateX(-200vh);
+    transform: translateX(-300vh);
     overflow-y: scroll;
     transition: 1s all;
 }
@@ -785,6 +785,9 @@ footer{
         order: 2;
         align-items: center;
         margin-top: 15px;
+    }
+    #footer1>p{
+        text-align: center;
     }
     #footer3{
         order: 3;
