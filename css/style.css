@@ -761,10 +761,10 @@ footer{
     justify-content: center;
     }
     .section2 a{
-        flex-basis: 90%;
+        flex-basis: 100%;
     }
     .card{
-        flex-basis: 100%;
+        width: 100%;
         height: 500px;
     }
     .slider2 a{
