@@ -7,6 +7,9 @@
 body.active{
     overflow: hidden;
 }
+body{
+    overflow-x: hidden;
+}
 header{
     position: absolute;
     top: 0;
