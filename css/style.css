@@ -220,11 +220,11 @@ main{
     position: relative;
 }
 .slide-item1{
-    background: url(/img/slide1.png) no-repeat;
+    background: url(/img/slide1.jpg) no-repeat;
     background-size: cover;
 }
 .slide-item2{
-    background: url(/img/slide2.png) no-repeat;
+    background: url(/img/slide2.jpg) no-repeat;
     background-size: cover;
 }
 .slider-item{
