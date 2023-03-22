@@ -127,7 +127,7 @@ header:hover{
     display: none;
     align-items: center;
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 .nav-bars i{
     transition: all 0.2s;
